@@ -1,0 +1,57 @@
+<template>
+    <h2> Covid-19 vaccination Table</h2>
+    <template if:true={conList}>
+        <lightning-datatable data={conList} columns={columns} key-field="Name">
+        </lightning-datatable>
+    </template>
+    <template if:true={error}>
+        {error}
+    </template>
+</template>
+
+
+<!-- To display data on SLDS
+<template>
+    <h2> Vaccination Drive Datatable </h2>
+    <template if:true={conList}>
+
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+            <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Name">Name</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Age">Age</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Latitude">Nearest Drive location</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Longitude">Distance</div>
+                </th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <template for:each={conList} for:item="con">
+                <tr key={con.Name}>
+                    <td class="slds-cell-wrap" data-label="Wrapped, line clamped">
+                        <div class="slds-line-clamp_small">{con.Name}</div>
+                    </td>
+                    <td class="slds-cell-wrap" data-label="Wrapped, line clamped">
+                        <div class="slds-line-clamp_small">{con.Age__c}</div>
+                    </td>
+                    <td class="slds-cell-wrap" data-label="Wrapped, line clamped">
+                        <div class="slds-line-clamp_small">{con.Drive_Location__c}</div>
+                    </td>
+                    <td class="slds-cell-wrap" data-label="Wrapped, line clamped">
+                        <div class="slds-line-clamp_small">{con.Distance__c}</div>
+                    </td>
+                </tr>
+            </template>
+            </tbody>
+        </table>
+    </template>
+</template>
+-->
