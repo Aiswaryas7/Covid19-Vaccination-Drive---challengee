@@ -1,6 +1,7 @@
 # Covid19-Vaccination-Drive---challenge
 
 How it Works :
+
       step 1: Upload the attached file 'People.csv' in to people object using data import wizard.
              setup -- Data import wizard --Custom Object:people -- Add New Records -- match by 'Name' -- upload fiel 'People.csv' -- done
       step 2: Add the lightning web page component to any of the flexi page.
@@ -10,21 +11,22 @@ How it Works :
 
 
 CV Drive Technical Document
-Contents:
-  (1).	Description
-  (2).	System Design
-      a Objects & Relationships
-      b JSON and Field Mapping
-      c Flow Diagram
-  (3).	Solution and Implementation
-  (4).	Tools and technologies used
+
+      Contents:
+       (1).	Description
+       (2).	System Design
+             a Objects & Relationships
+             b JSON and Field Mapping
+            c Flow Diagram
+       (3).	Solution and Implementation
+       (4).	Tools and technologies used
 
 
-  1.	Use Case Description :
-          This use-case is intended for the individuals to be contacted to their nearest drive location as per 
+       1.	Use Case Description :
+           This use-case is intended for the individuals to be contacted to their nearest drive location as per 
           Government guidelines awaiting for their COVID-19 vaccination. Details of people are provided in a JSON-encoded text
           file and need to output each customer per line along with the nearest vaccination center.
-  2.	System Design
+       2.	System Design
           Objects that Covid – 19 vaccination majorly deals with.
               a.	People : : It is the core object to hold details of individuals awaiting for their vaccinations.
                     Object :
