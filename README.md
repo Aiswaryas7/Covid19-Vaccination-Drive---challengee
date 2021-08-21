@@ -1,9 +1,12 @@
 # Covid19-Vaccination-Drive---challenge
 
 How it Works :
-step 1: Add the lightning web page component to any of the flexi page.
-      app launcher -- sales -- find Account tab -- click on any of the account record -- edit page from setup -- drag and drop custom component 'vaccinationDrive'
-step 2: You will be able to see corresponding nearest drive location for each of the people corresponding to the shared metadata .
+      step 1: Upload the attached file 'People.csv' in to people object using data import wizard.
+             setup -- Data import wizard --Custom Object:people -- Add New Records -- match by 'Name' -- upload fiel 'People.csv' -- done
+      step 2: Add the lightning web page component to any of the flexi page.
+             app launcher -- sales -- find Account tab -- click on any of the account record -- edit page from setup -- drag and drop custom component 'vaccinationDrive'
+      step 3: You will be able to see corresponding nearest drive location for each of the people corresponding for the shared metadata .
+                        I have attached the output screen Image as well on basis of age priority - 'Output_Screen.jpg'
 
 
 CV Drive Technical Document
